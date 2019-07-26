@@ -24,6 +24,9 @@ namespace Pattern.Factories
 
             var correspondingType = types.FirstOrDefault(x => typeof(TMapperType).IsAssignableFrom(x));
 
+            if(correspondingType == null)
+                throw new ArgumentException(nameof(correspondingType));
+
             return (TMapperType)Activator.CreateInstance(correspondingType);
         }
 
