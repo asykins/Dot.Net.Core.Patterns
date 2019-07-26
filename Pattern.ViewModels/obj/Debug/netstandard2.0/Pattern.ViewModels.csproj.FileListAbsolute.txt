@@ -1,0 +1,9 @@
+C:\Users\thomas.halin\source\PatternsProject\Pattern.ViewModels\bin\Debug\netstandard2.0\Pattern.ViewModels.deps.json
+C:\Users\thomas.halin\source\PatternsProject\Pattern.ViewModels\bin\Debug\netstandard2.0\Pattern.ViewModels.dll
+C:\Users\thomas.halin\source\PatternsProject\Pattern.ViewModels\bin\Debug\netstandard2.0\Pattern.ViewModels.pdb
+C:\Users\thomas.halin\source\PatternsProject\Pattern.ViewModels\obj\Debug\netstandard2.0\Pattern.ViewModels.csprojAssemblyReference.cache
+C:\Users\thomas.halin\source\PatternsProject\Pattern.ViewModels\obj\Debug\netstandard2.0\Pattern.ViewModels.csproj.CoreCompileInputs.cache
+C:\Users\thomas.halin\source\PatternsProject\Pattern.ViewModels\obj\Debug\netstandard2.0\Pattern.ViewModels.AssemblyInfoInputs.cache
+C:\Users\thomas.halin\source\PatternsProject\Pattern.ViewModels\obj\Debug\netstandard2.0\Pattern.ViewModels.AssemblyInfo.cs
+C:\Users\thomas.halin\source\PatternsProject\Pattern.ViewModels\obj\Debug\netstandard2.0\Pattern.ViewModels.dll
+C:\Users\thomas.halin\source\PatternsProject\Pattern.ViewModels\obj\Debug\netstandard2.0\Pattern.ViewModels.pdb

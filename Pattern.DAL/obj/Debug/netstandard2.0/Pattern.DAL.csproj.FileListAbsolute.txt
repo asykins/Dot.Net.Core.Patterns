@@ -1,0 +1,12 @@
+C:\Users\thomas.halin\source\PatternsProject\Pattern.DAL\bin\Debug\netstandard2.0\Pattern.DAL.deps.json
+C:\Users\thomas.halin\source\PatternsProject\Pattern.DAL\bin\Debug\netstandard2.0\Pattern.DAL.dll
+C:\Users\thomas.halin\source\PatternsProject\Pattern.DAL\bin\Debug\netstandard2.0\Pattern.DAL.pdb
+C:\Users\thomas.halin\source\PatternsProject\Pattern.DAL\bin\Debug\netstandard2.0\Pattern.Domain.dll
+C:\Users\thomas.halin\source\PatternsProject\Pattern.DAL\bin\Debug\netstandard2.0\Pattern.Domain.pdb
+C:\Users\thomas.halin\source\PatternsProject\Pattern.DAL\obj\Debug\netstandard2.0\Pattern.DAL.csprojAssemblyReference.cache
+C:\Users\thomas.halin\source\PatternsProject\Pattern.DAL\obj\Debug\netstandard2.0\Pattern.DAL.csproj.CoreCompileInputs.cache
+C:\Users\thomas.halin\source\PatternsProject\Pattern.DAL\obj\Debug\netstandard2.0\Pattern.DAL.AssemblyInfoInputs.cache
+C:\Users\thomas.halin\source\PatternsProject\Pattern.DAL\obj\Debug\netstandard2.0\Pattern.DAL.AssemblyInfo.cs
+C:\Users\thomas.halin\source\PatternsProject\Pattern.DAL\obj\Debug\netstandard2.0\Pattern.DAL.csproj.CopyComplete
+C:\Users\thomas.halin\source\PatternsProject\Pattern.DAL\obj\Debug\netstandard2.0\Pattern.DAL.dll
+C:\Users\thomas.halin\source\PatternsProject\Pattern.DAL\obj\Debug\netstandard2.0\Pattern.DAL.pdb
