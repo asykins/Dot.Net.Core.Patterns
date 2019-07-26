@@ -47,11 +47,11 @@ namespace Pattern.Web.Controllers
 
             IEnumerable<IProduct> products = productRepository.GetClientProducts(client);
 
-            var productMapper = mapperFactory.CreateMapper<IProductMapper, IProduct>(products);
+            var productMapper = mapperFactory.CreateMapper<IProductMapper>(products);
 
             var processedProducts = productMapper.ApplyTVA(products);
             
-            var viewModelMapper = mapperFactory.CreateMapper<IProductViewModelMapper, IProduct>(processedProducts);
+            var viewModelMapper = mapperFactory.CreateMapper<IProductViewModelMapper>(processedProducts);
 
             var viewModel = viewModelMapper.MapToViewModel(processedProducts).First();
 

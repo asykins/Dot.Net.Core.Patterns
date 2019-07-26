@@ -30,7 +30,7 @@ namespace Pattern.Factories
             return (TMapperType)Activator.CreateInstance(correspondingType);
         }
 
-        public TMapperType CreateMapper<TMapperType, TEntityType>(IEnumerable<TEntityType> entities)
+        public TMapperType CreateMapper<TMapperType>(IEnumerable<TEntityType> entities)
         {
             if(entities == null || !entities.Any())
                 throw new ArgumentNullException("IEnumerable of entities cannot be null");
