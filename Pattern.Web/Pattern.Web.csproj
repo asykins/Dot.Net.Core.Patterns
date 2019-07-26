@@ -13,11 +13,8 @@
 
 
   <ItemGroup>
-    <ProjectReference Include="..\Pattern.Domain\Pattern.Domain.csproj" />
-    <ProjectReference Include="..\Pattern.DAL\Pattern.DAL.csproj" />
-    <ProjectReference Include="..\Pattern.Factories\Pattern.Factories.csproj" />
-    <ProjectReference Include="..\Pattern.Mappers\Pattern.Mappers.csproj" />
     <ProjectReference Include="..\Pattern.ViewModels\Pattern.ViewModels.csproj" />
+    <ProjectReference Include="..\Pattern.Component\Pattern.Component.csproj /">
   </ItemGroup>
 
 </Project>

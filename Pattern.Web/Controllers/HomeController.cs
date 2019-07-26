@@ -6,56 +6,31 @@ using Pattern.Domain;
 using System.Linq;
 using Pattern.Factories;
 using Pattern.Mappers;
+using Pattern.Component;
 
 namespace Pattern.Web.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly IClientRepository clientRepository;
-        private readonly IProductRepository productRepository;
-        private readonly IMapperFactory mapperFactory;
-
-        public HomeController(IClientRepository clientRepository, 
-                              IProductRepository productRepository,
-                              IMapperFactory mapperFactory)
+        private readonly IProductComponent productComponent;
+        public HomeController(IProductComponent productComponent)
         {
-            this.clientRepository = clientRepository ?? throw new ArgumentException(nameof(clientRepository));
-            this.productRepository = productRepository ?? throw new ArgumentNullException(nameof(productRepository)); 
-            this.mapperFactory = mapperFactory ?? throw new ArgumentNullException(nameof(mapperFactory));
+            this.productComponent = productComponent ?? throw new ArgumentNullException(nameof(productComponent));
         }
 
         public IActionResult Index()
         {
-            IClient client = clientRepository.Get(Guid.NewGuid());
-
-            IEnumerable<IProduct> products = productRepository.GetClientProducts(client);
-
-            var productMapper = mapperFactory.CreateMapper<IProductMapper, IProduct>(products);
-
-            var processedProducts = productMapper.ApplyTVA(products);
-            
-            var viewModelMapper = mapperFactory.CreateMapper<IProductViewModelMapper, IProduct>(processedProducts);
-
-            var viewModel = viewModelMapper.MapToViewModel(processedProducts).First();
-
+            var firstMappedProduct = productComponent.GetMappedProducts(Guid.NewGuid())
+                                                     .FirstOrDefault();
             return View("Index", viewModel);
         }
 
         public IActionResult IndexNull()
         {
-            IClient client = clientRepository.Get(default(Guid));
+            var firstMappedProduct = productComponent.GetMappedProducts(default(Guid))
+                                                     .FirstOrDefault();
 
-            IEnumerable<IProduct> products = productRepository.GetClientProducts(client);
-
-            var productMapper = mapperFactory.CreateMapper<IProductMapper>(products);
-
-            var processedProducts = productMapper.ApplyTVA(products);
-            
-            var viewModelMapper = mapperFactory.CreateMapper<IProductViewModelMapper>(processedProducts);
-
-            var viewModel = viewModelMapper.MapToViewModel(processedProducts).First();
-
-            return View("Index", viewModel);
+            return View("Index", firstMappedProduct);
         }
     }
 }
