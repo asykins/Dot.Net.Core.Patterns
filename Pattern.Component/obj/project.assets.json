@@ -25,6 +25,67 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
+      },
+      "Pattern.DAL/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Pattern.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Pattern.DAL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Pattern.DAL.dll": {}
+        }
+      },
+      "Pattern.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Pattern.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Pattern.Domain.dll": {}
+        }
+      },
+      "Pattern.Factories/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Pattern.Domain": "1.0.0",
+          "Pattern.Mappers": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Pattern.Factories.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Pattern.Factories.dll": {}
+        }
+      },
+      "Pattern.Mappers/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Pattern.Domain": "1.0.0",
+          "Pattern.ViewModels": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Pattern.Mappers.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Pattern.Mappers.dll": {}
+        }
+      },
+      "Pattern.ViewModels/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Pattern.ViewModels.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Pattern.ViewModels.dll": {}
+        }
       }
     }
   },
@@ -170,11 +231,41 @@
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
+    },
+    "Pattern.DAL/1.0.0": {
+      "type": "project",
+      "path": "../Pattern.DAL/Pattern.DAL.csproj",
+      "msbuildProject": "../Pattern.DAL/Pattern.DAL.csproj"
+    },
+    "Pattern.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Pattern.Domain/Pattern.Domain.csproj",
+      "msbuildProject": "../Pattern.Domain/Pattern.Domain.csproj"
+    },
+    "Pattern.Factories/1.0.0": {
+      "type": "project",
+      "path": "../Pattern.Factories/Pattern.Factories.csproj",
+      "msbuildProject": "../Pattern.Factories/Pattern.Factories.csproj"
+    },
+    "Pattern.Mappers/1.0.0": {
+      "type": "project",
+      "path": "../Pattern.Mappers/Pattern.Mappers.csproj",
+      "msbuildProject": "../Pattern.Mappers/Pattern.Mappers.csproj"
+    },
+    "Pattern.ViewModels/1.0.0": {
+      "type": "project",
+      "path": "../Pattern.ViewModels/Pattern.ViewModels.csproj",
+      "msbuildProject": "../Pattern.ViewModels/Pattern.ViewModels.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
-      "NETStandard.Library >= 2.0.3"
+      "NETStandard.Library >= 2.0.3",
+      "Pattern.DAL >= 1.0.0",
+      "Pattern.Domain >= 1.0.0",
+      "Pattern.Factories >= 1.0.0",
+      "Pattern.Mappers >= 1.0.0",
+      "Pattern.ViewModels >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -184,11 +275,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\thomas.halin\\source\\repos\\Pattern.Dot.Net\\Pattern.Component\\Pattern.Component.csproj",
+      "projectUniqueName": "C:\\Users\\thomas.halin\\source\\repos\\Pattern.Dot.Net\\Dot.Net.Core.Patterns\\Pattern.Component\\Pattern.Component.csproj",
       "projectName": "Pattern.Component",
-      "projectPath": "C:\\Users\\thomas.halin\\source\\repos\\Pattern.Dot.Net\\Pattern.Component\\Pattern.Component.csproj",
+      "projectPath": "C:\\Users\\thomas.halin\\source\\repos\\Pattern.Dot.Net\\Dot.Net.Core.Patterns\\Pattern.Component\\Pattern.Component.csproj",
       "packagesPath": "C:\\Users\\thomas.halin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\thomas.halin\\source\\repos\\Pattern.Dot.Net\\Pattern.Component\\obj\\",
+      "outputPath": "C:\\Users\\thomas.halin\\source\\repos\\Pattern.Dot.Net\\Dot.Net.Core.Patterns\\Pattern.Component\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -206,7 +297,23 @@
       },
       "frameworks": {
         "netstandard2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\thomas.halin\\source\\repos\\Pattern.Dot.Net\\Dot.Net.Core.Patterns\\Pattern.DAL\\Pattern.DAL.csproj": {
+              "projectPath": "C:\\Users\\thomas.halin\\source\\repos\\Pattern.Dot.Net\\Dot.Net.Core.Patterns\\Pattern.DAL\\Pattern.DAL.csproj"
+            },
+            "C:\\Users\\thomas.halin\\source\\repos\\Pattern.Dot.Net\\Dot.Net.Core.Patterns\\Pattern.Domain\\Pattern.Domain.csproj": {
+              "projectPath": "C:\\Users\\thomas.halin\\source\\repos\\Pattern.Dot.Net\\Dot.Net.Core.Patterns\\Pattern.Domain\\Pattern.Domain.csproj"
+            },
+            "C:\\Users\\thomas.halin\\source\\repos\\Pattern.Dot.Net\\Dot.Net.Core.Patterns\\Pattern.Factories\\Pattern.Factories.csproj": {
+              "projectPath": "C:\\Users\\thomas.halin\\source\\repos\\Pattern.Dot.Net\\Dot.Net.Core.Patterns\\Pattern.Factories\\Pattern.Factories.csproj"
+            },
+            "C:\\Users\\thomas.halin\\source\\repos\\Pattern.Dot.Net\\Dot.Net.Core.Patterns\\Pattern.Mappers\\Pattern.Mappers.csproj": {
+              "projectPath": "C:\\Users\\thomas.halin\\source\\repos\\Pattern.Dot.Net\\Dot.Net.Core.Patterns\\Pattern.Mappers\\Pattern.Mappers.csproj"
+            },
+            "C:\\Users\\thomas.halin\\source\\repos\\Pattern.Dot.Net\\Dot.Net.Core.Patterns\\Pattern.ViewModels\\Pattern.ViewModels.csproj": {
+              "projectPath": "C:\\Users\\thomas.halin\\source\\repos\\Pattern.Dot.Net\\Dot.Net.Core.Patterns\\Pattern.ViewModels\\Pattern.ViewModels.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

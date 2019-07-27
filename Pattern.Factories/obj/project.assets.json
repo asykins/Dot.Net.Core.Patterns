@@ -235,11 +235,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\thomas.halin\\source\\PatternsProject\\Pattern.Factories\\Pattern.Factories.csproj",
+      "projectUniqueName": "C:\\Users\\thomas.halin\\source\\repos\\Pattern.Dot.Net\\Dot.Net.Core.Patterns\\Pattern.Factories\\Pattern.Factories.csproj",
       "projectName": "Pattern.Factories",
-      "projectPath": "C:\\Users\\thomas.halin\\source\\PatternsProject\\Pattern.Factories\\Pattern.Factories.csproj",
+      "projectPath": "C:\\Users\\thomas.halin\\source\\repos\\Pattern.Dot.Net\\Dot.Net.Core.Patterns\\Pattern.Factories\\Pattern.Factories.csproj",
       "packagesPath": "C:\\Users\\thomas.halin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\thomas.halin\\source\\PatternsProject\\Pattern.Factories\\obj\\",
+      "outputPath": "C:\\Users\\thomas.halin\\source\\repos\\Pattern.Dot.Net\\Dot.Net.Core.Patterns\\Pattern.Factories\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -258,11 +258,11 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "C:\\Users\\thomas.halin\\source\\PatternsProject\\Pattern.Domain\\Pattern.Domain.csproj": {
-              "projectPath": "C:\\Users\\thomas.halin\\source\\PatternsProject\\Pattern.Domain\\Pattern.Domain.csproj"
+            "C:\\Users\\thomas.halin\\source\\repos\\Pattern.Dot.Net\\Dot.Net.Core.Patterns\\Pattern.Domain\\Pattern.Domain.csproj": {
+              "projectPath": "C:\\Users\\thomas.halin\\source\\repos\\Pattern.Dot.Net\\Dot.Net.Core.Patterns\\Pattern.Domain\\Pattern.Domain.csproj"
             },
-            "C:\\Users\\thomas.halin\\source\\PatternsProject\\Pattern.Mappers\\Pattern.Mappers.csproj": {
-              "projectPath": "C:\\Users\\thomas.halin\\source\\PatternsProject\\Pattern.Mappers\\Pattern.Mappers.csproj"
+            "C:\\Users\\thomas.halin\\source\\repos\\Pattern.Dot.Net\\Dot.Net.Core.Patterns\\Pattern.Mappers\\Pattern.Mappers.csproj": {
+              "projectPath": "C:\\Users\\thomas.halin\\source\\repos\\Pattern.Dot.Net\\Dot.Net.Core.Patterns\\Pattern.Mappers\\Pattern.Mappers.csproj"
             }
           }
         }

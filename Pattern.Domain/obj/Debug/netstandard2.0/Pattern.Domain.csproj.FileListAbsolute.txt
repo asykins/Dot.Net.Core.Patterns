@@ -7,3 +7,12 @@ C:\Users\thomas.halin\source\PatternsProject\Pattern.Domain\bin\Debug\netstandar
 C:\Users\thomas.halin\source\PatternsProject\Pattern.Domain\bin\Debug\netstandard2.0\Pattern.Domain.pdb
 C:\Users\thomas.halin\source\PatternsProject\Pattern.Domain\obj\Debug\netstandard2.0\Pattern.Domain.dll
 C:\Users\thomas.halin\source\PatternsProject\Pattern.Domain\obj\Debug\netstandard2.0\Pattern.Domain.pdb
+C:\Users\thomas.halin\source\repos\Pattern.Dot.Net\Dot.Net.Core.Patterns\Pattern.Domain\bin\Debug\netstandard2.0\Pattern.Domain.deps.json
+C:\Users\thomas.halin\source\repos\Pattern.Dot.Net\Dot.Net.Core.Patterns\Pattern.Domain\bin\Debug\netstandard2.0\Pattern.Domain.dll
+C:\Users\thomas.halin\source\repos\Pattern.Dot.Net\Dot.Net.Core.Patterns\Pattern.Domain\bin\Debug\netstandard2.0\Pattern.Domain.pdb
+C:\Users\thomas.halin\source\repos\Pattern.Dot.Net\Dot.Net.Core.Patterns\Pattern.Domain\obj\Debug\netstandard2.0\Pattern.Domain.csprojAssemblyReference.cache
+C:\Users\thomas.halin\source\repos\Pattern.Dot.Net\Dot.Net.Core.Patterns\Pattern.Domain\obj\Debug\netstandard2.0\Pattern.Domain.csproj.CoreCompileInputs.cache
+C:\Users\thomas.halin\source\repos\Pattern.Dot.Net\Dot.Net.Core.Patterns\Pattern.Domain\obj\Debug\netstandard2.0\Pattern.Domain.AssemblyInfoInputs.cache
+C:\Users\thomas.halin\source\repos\Pattern.Dot.Net\Dot.Net.Core.Patterns\Pattern.Domain\obj\Debug\netstandard2.0\Pattern.Domain.AssemblyInfo.cs
+C:\Users\thomas.halin\source\repos\Pattern.Dot.Net\Dot.Net.Core.Patterns\Pattern.Domain\obj\Debug\netstandard2.0\Pattern.Domain.dll
+C:\Users\thomas.halin\source\repos\Pattern.Dot.Net\Dot.Net.Core.Patterns\Pattern.Domain\obj\Debug\netstandard2.0\Pattern.Domain.pdb

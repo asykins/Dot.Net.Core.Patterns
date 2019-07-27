@@ -33,6 +33,7 @@ namespace Pattern.Web
             services.AddScoped<IMapperNamesHelper, MapperNamesHelpers>();
             services.AddScoped<IProductMapper, ProductMapper>();
             services.AddScoped<IProductMapper, NullProductMapper>();
+            services.AddScoped<IProductComponent, ProductComponent>();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }

@@ -14,7 +14,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Pattern.ViewModels\Pattern.ViewModels.csproj" />
-    <ProjectReference Include="..\Pattern.Component\Pattern.Component.csproj /">
+    <ProjectReference Include="..\Pattern.Component\Pattern.Component.csproj "/>
   </ItemGroup>
 
 </Project>

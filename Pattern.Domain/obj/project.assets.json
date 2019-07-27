@@ -184,11 +184,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\thomas.halin\\source\\PatternsProject\\Pattern.Domain\\Pattern.Domain.csproj",
+      "projectUniqueName": "c:\\Users\\thomas.halin\\source\\repos\\Pattern.Dot.Net\\Dot.Net.Core.Patterns\\Pattern.Domain\\Pattern.Domain.csproj",
       "projectName": "Pattern.Domain",
-      "projectPath": "C:\\Users\\thomas.halin\\source\\PatternsProject\\Pattern.Domain\\Pattern.Domain.csproj",
+      "projectPath": "c:\\Users\\thomas.halin\\source\\repos\\Pattern.Dot.Net\\Dot.Net.Core.Patterns\\Pattern.Domain\\Pattern.Domain.csproj",
       "packagesPath": "C:\\Users\\thomas.halin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\thomas.halin\\source\\PatternsProject\\Pattern.Domain\\obj\\",
+      "outputPath": "c:\\Users\\thomas.halin\\source\\repos\\Pattern.Dot.Net\\Dot.Net.Core.Patterns\\Pattern.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

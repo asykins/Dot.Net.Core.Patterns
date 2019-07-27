@@ -200,11 +200,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\thomas.halin\\source\\PatternsProject\\Pattern.DAL\\Pattern.DAL.csproj",
+      "projectUniqueName": "C:\\Users\\thomas.halin\\source\\repos\\Pattern.Dot.Net\\Dot.Net.Core.Patterns\\Pattern.DAL\\Pattern.DAL.csproj",
       "projectName": "Pattern.DAL",
-      "projectPath": "C:\\Users\\thomas.halin\\source\\PatternsProject\\Pattern.DAL\\Pattern.DAL.csproj",
+      "projectPath": "C:\\Users\\thomas.halin\\source\\repos\\Pattern.Dot.Net\\Dot.Net.Core.Patterns\\Pattern.DAL\\Pattern.DAL.csproj",
       "packagesPath": "C:\\Users\\thomas.halin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\thomas.halin\\source\\PatternsProject\\Pattern.DAL\\obj\\",
+      "outputPath": "C:\\Users\\thomas.halin\\source\\repos\\Pattern.Dot.Net\\Dot.Net.Core.Patterns\\Pattern.DAL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -223,8 +223,8 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "C:\\Users\\thomas.halin\\source\\PatternsProject\\Pattern.Domain\\Pattern.Domain.csproj": {
-              "projectPath": "C:\\Users\\thomas.halin\\source\\PatternsProject\\Pattern.Domain\\Pattern.Domain.csproj"
+            "C:\\Users\\thomas.halin\\source\\repos\\Pattern.Dot.Net\\Dot.Net.Core.Patterns\\Pattern.Domain\\Pattern.Domain.csproj": {
+              "projectPath": "C:\\Users\\thomas.halin\\source\\repos\\Pattern.Dot.Net\\Dot.Net.Core.Patterns\\Pattern.Domain\\Pattern.Domain.csproj"
             }
           }
         }

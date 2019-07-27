@@ -22,7 +22,7 @@ namespace Pattern.Web.Controllers
         {
             var firstMappedProduct = productComponent.GetMappedProducts(Guid.NewGuid())
                                                      .FirstOrDefault();
-            return View("Index", viewModel);
+            return View("Index", firstMappedProduct);
         }
 
         public IActionResult IndexNull()

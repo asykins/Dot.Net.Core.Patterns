@@ -184,11 +184,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\thomas.halin\\source\\PatternsProject\\Pattern.ViewModels\\Pattern.ViewModels.csproj",
+      "projectUniqueName": "c:\\Users\\thomas.halin\\source\\repos\\Pattern.Dot.Net\\Dot.Net.Core.Patterns\\Pattern.ViewModels\\Pattern.ViewModels.csproj",
       "projectName": "Pattern.ViewModels",
-      "projectPath": "C:\\Users\\thomas.halin\\source\\PatternsProject\\Pattern.ViewModels\\Pattern.ViewModels.csproj",
+      "projectPath": "c:\\Users\\thomas.halin\\source\\repos\\Pattern.Dot.Net\\Dot.Net.Core.Patterns\\Pattern.ViewModels\\Pattern.ViewModels.csproj",
       "packagesPath": "C:\\Users\\thomas.halin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\thomas.halin\\source\\PatternsProject\\Pattern.ViewModels\\obj\\",
+      "outputPath": "c:\\Users\\thomas.halin\\source\\repos\\Pattern.Dot.Net\\Dot.Net.Core.Patterns\\Pattern.ViewModels\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

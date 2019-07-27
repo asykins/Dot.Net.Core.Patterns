@@ -27,10 +27,7 @@
           "Microsoft.AspNetCore.App": "2.2.0",
           "Microsoft.AspNetCore.Razor.Design": "2.2.0",
           "Microsoft.NETCore.App": "2.2.0",
-          "Pattern.DAL": "1.0.0",
-          "Pattern.Domain": "1.0.0",
-          "Pattern.Factories": "1.0.0",
-          "Pattern.Mappers": "1.0.0",
+          "Pattern.Component": "1.0.0",
           "Pattern.ViewModels": "1.0.0"
         },
         "runtime": {
@@ -38,6 +35,21 @@
         },
         "compile": {
           "Pattern.Web.dll": {}
+        }
+      },
+      "Pattern.Component/1.0.0": {
+        "dependencies": {
+          "Pattern.DAL": "1.0.0",
+          "Pattern.Domain": "1.0.0",
+          "Pattern.Factories": "1.0.0",
+          "Pattern.Mappers": "1.0.0",
+          "Pattern.ViewModels": "1.0.0"
+        },
+        "runtime": {
+          "Pattern.Component.dll": {}
+        },
+        "compile": {
+          "Pattern.Component.dll": {}
         }
       },
       "Pattern.DAL/1.0.0": {
@@ -3289,6 +3301,11 @@
   },
   "libraries": {
     "Pattern.Web/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Pattern.Component/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

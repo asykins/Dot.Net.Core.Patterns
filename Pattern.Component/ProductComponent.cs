@@ -3,6 +3,8 @@ using Pattern.Domain;
 using Pattern.ViewModels;
 using Pattern.Factories;
 using Pattern.DAL;
+using System.Collections.Generic;
+using Pattern.Mappers;
 
 namespace Pattern.Component
 {
@@ -27,11 +29,11 @@ namespace Pattern.Component
 
             IEnumerable<IProduct> products = productRepository.GetClientProducts(client);
 
-            IProducctMapper productMapper = mapperFactory.CreateMapper<IProductMapper>(products);
+            IProductMapper productMapper = mapperFactory.CreateMapper<IProductMapper, IProduct>(products);
 
             IEnumerable<IProduct> processedProducts = productMapper.ApplyTVA(products);
             
-            IProductViewModelMapper viewModelMapper = mapperFactory.CreateMapper<IProductViewModelMapper>(processedProducts);
+            IProductViewModelMapper viewModelMapper = mapperFactory.CreateMapper<IProductViewModelMapper, IProduct>(processedProducts);
 
             IEnumerable<ProductViewModel> viewModel = viewModelMapper.MapToViewModel(processedProducts);
 

@@ -4439,6 +4439,23 @@
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
       },
+      "Pattern.Component/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Pattern.DAL": "1.0.0",
+          "Pattern.Domain": "1.0.0",
+          "Pattern.Factories": "1.0.0",
+          "Pattern.Mappers": "1.0.0",
+          "Pattern.ViewModels": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Pattern.Component.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Pattern.Component.dll": {}
+        }
+      },
       "Pattern.DAL/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -12121,6 +12138,11 @@
         "system.xml.xpath.xdocument.nuspec"
       ]
     },
+    "Pattern.Component/1.0.0": {
+      "type": "project",
+      "path": "../Pattern.Component/Pattern.Component.csproj",
+      "msbuildProject": "../Pattern.Component/Pattern.Component.csproj"
+    },
     "Pattern.DAL/1.0.0": {
       "type": "project",
       "path": "../Pattern.DAL/Pattern.DAL.csproj",
@@ -12152,10 +12174,7 @@
       "Microsoft.AspNetCore.App >= 2.2.0",
       "Microsoft.AspNetCore.Razor.Design >= 2.2.0",
       "Microsoft.NETCore.App >= 2.2.0",
-      "Pattern.DAL >= 1.0.0",
-      "Pattern.Domain >= 1.0.0",
-      "Pattern.Factories >= 1.0.0",
-      "Pattern.Mappers >= 1.0.0",
+      "Pattern.Component >= 1.0.0",
       "Pattern.ViewModels >= 1.0.0"
     ]
   },
@@ -12166,11 +12185,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\thomas.halin\\source\\PatternsProject\\Pattern.Web\\Pattern.Web.csproj",
+      "projectUniqueName": "C:\\Users\\thomas.halin\\source\\repos\\Pattern.Dot.Net\\Dot.Net.Core.Patterns\\Pattern.Web\\Pattern.Web.csproj",
       "projectName": "Pattern.Web",
-      "projectPath": "C:\\Users\\thomas.halin\\source\\PatternsProject\\Pattern.Web\\Pattern.Web.csproj",
+      "projectPath": "C:\\Users\\thomas.halin\\source\\repos\\Pattern.Dot.Net\\Dot.Net.Core.Patterns\\Pattern.Web\\Pattern.Web.csproj",
       "packagesPath": "C:\\Users\\thomas.halin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\thomas.halin\\source\\PatternsProject\\Pattern.Web\\obj\\",
+      "outputPath": "C:\\Users\\thomas.halin\\source\\repos\\Pattern.Dot.Net\\Dot.Net.Core.Patterns\\Pattern.Web\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -12189,20 +12208,11 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "C:\\Users\\thomas.halin\\source\\PatternsProject\\Pattern.DAL\\Pattern.DAL.csproj": {
-              "projectPath": "C:\\Users\\thomas.halin\\source\\PatternsProject\\Pattern.DAL\\Pattern.DAL.csproj"
+            "C:\\Users\\thomas.halin\\source\\repos\\Pattern.Dot.Net\\Dot.Net.Core.Patterns\\Pattern.Component\\Pattern.Component.csproj": {
+              "projectPath": "C:\\Users\\thomas.halin\\source\\repos\\Pattern.Dot.Net\\Dot.Net.Core.Patterns\\Pattern.Component\\Pattern.Component.csproj"
             },
-            "C:\\Users\\thomas.halin\\source\\PatternsProject\\Pattern.Domain\\Pattern.Domain.csproj": {
-              "projectPath": "C:\\Users\\thomas.halin\\source\\PatternsProject\\Pattern.Domain\\Pattern.Domain.csproj"
-            },
-            "C:\\Users\\thomas.halin\\source\\PatternsProject\\Pattern.Factories\\Pattern.Factories.csproj": {
-              "projectPath": "C:\\Users\\thomas.halin\\source\\PatternsProject\\Pattern.Factories\\Pattern.Factories.csproj"
-            },
-            "C:\\Users\\thomas.halin\\source\\PatternsProject\\Pattern.Mappers\\Pattern.Mappers.csproj": {
-              "projectPath": "C:\\Users\\thomas.halin\\source\\PatternsProject\\Pattern.Mappers\\Pattern.Mappers.csproj"
-            },
-            "C:\\Users\\thomas.halin\\source\\PatternsProject\\Pattern.ViewModels\\Pattern.ViewModels.csproj": {
-              "projectPath": "C:\\Users\\thomas.halin\\source\\PatternsProject\\Pattern.ViewModels\\Pattern.ViewModels.csproj"
+            "C:\\Users\\thomas.halin\\source\\repos\\Pattern.Dot.Net\\Dot.Net.Core.Patterns\\Pattern.ViewModels\\Pattern.ViewModels.csproj": {
+              "projectPath": "C:\\Users\\thomas.halin\\source\\repos\\Pattern.Dot.Net\\Dot.Net.Core.Patterns\\Pattern.ViewModels\\Pattern.ViewModels.csproj"
             }
           }
         }

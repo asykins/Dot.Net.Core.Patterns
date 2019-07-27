@@ -6,6 +6,6 @@ namespace Pattern.Factories
     public interface IMapperFactory
     {
         TMapperType CreateMapper<TMapperType>(Type type);
-        TMapperType CreateMapper<TMapperType>(IEnumerable<TEntityType> entities);
+        TMapperType CreateMapper<TMapperType, TEntityType>(IEnumerable<TEntityType> entities);
     }
 }
