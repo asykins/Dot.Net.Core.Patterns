@@ -12,7 +12,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Pattern.DAL;
 using Pattern.Factories;
 using Pattern.Mappers;
-
+using Pattern.Component;
 namespace Pattern.Web
 {
     public class Startup

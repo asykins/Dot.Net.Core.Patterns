@@ -25,7 +25,7 @@ namespace Pattern.Component
 
         public IEnumerable<ProductViewModel> GetMappedProducts(Guid clientId)
         {
-            IClient client = clientRepository.Get(default(Guid));
+            IClient client = clientRepository.Get(clientId);
 
             IEnumerable<IProduct> products = productRepository.GetClientProducts(client);
 
