@@ -18,10 +18,10 @@ namespace Pattern.Factories
 
         private void RegisterTypes(Dictionary<Type, Type> typesCorrespondances)
         {
-            typesCorrespondances.AddTypes<ProductMapper, Product>();
-            typesCorrespondances.AddTypes<NullProductMapper, NullProduct>();
-            typesCorrespondances.AddTypes<ProductViewModelMapper, Product>();
-            typesCorrespondances.AddTypes<NullProductViewModelMapper, NullProduct>();
+            typesCorrespondances.Add<ProductMapper, Product>();
+            typesCorrespondances.Add<NullProductMapper, NullProduct>();
+            typesCorrespondances.Add<ProductViewModelMapper, Product>();
+            typesCorrespondances.Add<NullProductViewModelMapper, NullProduct>();
 
         }
 

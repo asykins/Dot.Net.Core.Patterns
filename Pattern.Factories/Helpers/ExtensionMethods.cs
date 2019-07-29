@@ -5,7 +5,7 @@ namespace Pattern.Factories
 {
     public static class ExtensionMethods
     {
-        public static void AddTypes<T,U>(this Dictionary<Type,Type> dictionary)
+        public static void Add<T,U>(this Dictionary<Type,Type> dictionary)
         {
             dictionary.Add(typeof(T), typeof(U));
         }
