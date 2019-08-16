@@ -2,16 +2,19 @@
 using System.Reflection;
 using System.Linq;
 using System.Collections.Generic;
+using Pattern.Mappers;
 
 namespace Pattern.Factories
 {
     public class MapperFactory : IMapperFactory
     {
 
+        private readonly IServiceProvider serviceProvider;
         private readonly IMapperNamesHelper mapperNamesHelper;
 
-        public MapperFactory(IMapperNamesHelper mapperNamesHelper)
+        public MapperFactory(IMapperNamesHelper mapperNamesHelper, IServiceProvider serviceProvider)
         {
+            this.serviceProvider = serviceProvider ?? throw new ArgumentNullException(nameof(serviceProvider));
             this.mapperNamesHelper = mapperNamesHelper ?? throw new ArgumentNullException(nameof(mapperNamesHelper));
         }
 
@@ -27,7 +30,7 @@ namespace Pattern.Factories
             if(correspondingType == null)
                 throw new ArgumentException(nameof(correspondingType));
 
-            return (TMapperType)Activator.CreateInstance(correspondingType);
+            return (TMapperType)serviceProvider.GetService(correspondingType);
         }
 
         public TMapperType CreateMapper<TMapperType, TEntityType>(IEnumerable<TEntityType> entities)
@@ -38,6 +41,14 @@ namespace Pattern.Factories
             var type = entities.First().GetType();
 
             return CreateMapper<TMapperType>(type);
+        }
+
+        public TMapperType CreateMapper<TMapperType, TEntityType>(TEntityType entity)
+        {
+            if(entity == null)
+                throw new ArgumentNullException(nameof(entity));
+
+            return this.CreateMapper<TMapperType>(entity.GetType());
         }
     }
 }

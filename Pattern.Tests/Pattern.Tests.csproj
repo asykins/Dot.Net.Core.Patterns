@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.9.0" />
+    <PackageReference Include="moq" Version="4.12.0" />
+    <PackageReference Include="MSTest.TestAdapter" Version="1.3.2" />
+    <PackageReference Include="MSTest.TestFramework" Version="1.3.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Pattern.Factories\Pattern.Factories.csproj" />
+    <ProjectReference Include="..\Pattern.Mappers\Pattern.Mappers.csproj" />
+    <ProjectReference Include="..\Pattern.Domain\Pattern.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

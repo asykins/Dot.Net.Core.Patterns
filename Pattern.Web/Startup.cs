@@ -34,6 +34,12 @@ namespace Pattern.Web
             services.AddScoped<IProductMapper, ProductMapper>();
             services.AddScoped<IProductMapper, NullProductMapper>();
             services.AddScoped<IProductComponent, ProductComponent>();
+            services.AddScoped<IProductViewModelMapper, ProductViewModelMapper>();
+
+            services.AddScoped<NullProductMapper>();
+            services.AddScoped<ProductMapper>();
+            services.AddScoped<ProductViewModelMapper>();
+            services.AddScoped<NullProductViewModelMapper>();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
